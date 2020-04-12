@@ -1,0 +1,895 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+* #chk {
+  display: none;
+}
+
+* .Header_Logo--icon i {
+  display: none;
+}
+
+.mySlides {
+  display: none;
+  width: 500px;
+  height: 400px;
+  margin: auto;
+}
+
+.login_Modal .contactUs_Modal--main {
+  height: 350px !important;
+}
+
+.reservationModel .reservationModel--main {
+  width: 50%;
+  height: 1200px;
+  background-color: white;
+  border-radius: 4px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.reservationModel .reservationModel--main .contactUs_Modal--main--field {
+  margin-top: 6px;
+}
+
+.reservationModel .reservationModel--main .contactUs_Modal--main--field--Bouton {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.reservationModel .reservationModel--main .contactUs_Modal--main--field--Bouton button {
+  margin-top: 30px;
+  width: 30%;
+  height: 40px;
+  border-color: #C7081B;
+  background-color: transparent;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.reservationModel .reservationModel--main .contactUs_Modal--main--field--Bouton button:hover {
+  background-color: #C7081B;
+  color: white;
+  cursor: pointer;
+}
+
+.reservationModel .reservationModel--main .p_title {
+  margin-top: 30px;
+  font-size: 25px;
+}
+
+.reservationModel .reservationModel--main input {
+  width: 75%;
+  height: 30px;
+  border-radius: 5px;
+  cursor: text;
+}
+
+.reservationModel .reservationModel--main input:focus {
+  border-color: #C7081B;
+}
+
+.reservationModel .reservationModel--main .close {
+  position: absolute;
+  top: 0;
+  color: white;
+  right: 14px;
+  font-size: 42px;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  cursor: pointer;
+}
+
+.messageBox .messageBox_MainMessage {
+  margin-top: 200px;
+  width: 30%;
+  height: 150px;
+  background-color: white;
+  border-radius: 4px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.messageBox .messageBox_MainMessage--button {
+  position: relative;
+  top: 60px;
+}
+
+.messageBox .messageBox_MainMessage--button button {
+  width: 30%;
+  height: 40px;
+  border-color: #C7081B;
+  background-color: transparent;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.messageBox .messageBox_MainMessage--button button:hover {
+  background-color: #C7081B;
+  color: white;
+  cursor: pointer;
+}
+
+.messageBox .messageBox_MainMessage--message {
+  position: relative;
+  top: 30px;
+}
+
+.div_space {
+  width: 100px;
+  height: 20px;
+  background-color: blueviolet;
+}
+
+.modal-content_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.modal-content_container .modal-content_container--table {
+  margin-top: 50px;
+  margin-right: 10px;
+}
+
+.modal-content_container .modal-content_container--table table td {
+  border-bottom: 1px solid silver;
+  font-size: 20px;
+  width: 200px;
+}
+
+.modal-content_container .modal-content_container--table .table-btn {
+  margin-top: 30px;
+  width: 50%;
+  height: 40px;
+  border-color: #C7081B;
+  background-color: transparent;
+}
+
+.modal-content_container .modal-content_container--table .table-btn:hover {
+  background-color: #C7081B;
+  color: white;
+  cursor: crosshair;
+}
+
+.modal-content_container .modal-content_container--rightSide {
+  margin-left: 10px;
+  width: 30%;
+}
+
+.modal-content_container .modal-content_container--rightSide .modal-content_container--rightSide-first {
+  margin-top: 50px;
+  display: block;
+  height: 100px;
+  width: 100%;
+  border: 1px solid silver;
+}
+
+.modal-content_container .modal-content_container--rightSide .modal-content_container--rightSide-first table td {
+  width: 30%;
+  font-size: 23px;
+}
+
+.modal-content_container .modal-content_container--rightSide .modal-content_container--rightSide--buttom {
+  margin-top: 25px;
+  height: 307px;
+  width: 100%;
+  border: 1px solid silver;
+}
+
+.modal-content_container .modal-content_container--rightSide .modal-content_container--rightSide--buttom .Div_Actions--Element_popUp {
+  width: 90%;
+  height: 40px;
+  border: 1px solid red;
+  border-radius: 5px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 25px;
+}
+
+.modal-content_container .modal-content_container--rightSide .modal-content_container--rightSide--buttom .Div_Actions--Element_popUp p {
+  margin-top: 10px;
+}
+
+.modal-content_container .modal-content_container--rightSide .modal-content_container--rightSide--buttom .Div_Actions--Element_popUp:hover {
+  cursor: pointer;
+  background-color: #C7081B;
+  color: white;
+}
+
+/*popup Contact Us*/
+.contactUs_Modal, .login_Modal, .reservationModel, .messageBox, .ConfirmReservationModel {
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: none;
+  z-index: 2;
+}
+
+.contactUs_Modal .contactUs_Modal--main, .login_Modal .contactUs_Modal--main, .reservationModel .contactUs_Modal--main, .messageBox .contactUs_Modal--main, .ConfirmReservationModel .contactUs_Modal--main {
+  margin-top: 30px;
+  width: 50%;
+  height: 1200px;
+  background-color: white;
+  border-radius: 4px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.contactUs_Modal .contactUs_Modal--main .contactUs_Modal--main--field, .login_Modal .contactUs_Modal--main .contactUs_Modal--main--field, .reservationModel .contactUs_Modal--main .contactUs_Modal--main--field, .messageBox .contactUs_Modal--main .contactUs_Modal--main--field, .ConfirmReservationModel .contactUs_Modal--main .contactUs_Modal--main--field {
+  margin-top: 25px;
+}
+
+.contactUs_Modal .contactUs_Modal--main .contactUs_Modal--main--field--Bouton, .login_Modal .contactUs_Modal--main .contactUs_Modal--main--field--Bouton, .reservationModel .contactUs_Modal--main .contactUs_Modal--main--field--Bouton, .messageBox .contactUs_Modal--main .contactUs_Modal--main--field--Bouton, .ConfirmReservationModel .contactUs_Modal--main .contactUs_Modal--main--field--Bouton {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.contactUs_Modal .contactUs_Modal--main .contactUs_Modal--main--field--Bouton button, .login_Modal .contactUs_Modal--main .contactUs_Modal--main--field--Bouton button, .reservationModel .contactUs_Modal--main .contactUs_Modal--main--field--Bouton button, .messageBox .contactUs_Modal--main .contactUs_Modal--main--field--Bouton button, .ConfirmReservationModel .contactUs_Modal--main .contactUs_Modal--main--field--Bouton button {
+  margin-top: 30px;
+  width: 30%;
+  height: 40px;
+  border-color: #C7081B;
+  background-color: transparent;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.contactUs_Modal .contactUs_Modal--main .contactUs_Modal--main--field--Bouton button:hover, .login_Modal .contactUs_Modal--main .contactUs_Modal--main--field--Bouton button:hover, .reservationModel .contactUs_Modal--main .contactUs_Modal--main--field--Bouton button:hover, .messageBox .contactUs_Modal--main .contactUs_Modal--main--field--Bouton button:hover, .ConfirmReservationModel .contactUs_Modal--main .contactUs_Modal--main--field--Bouton button:hover {
+  background-color: #C7081B;
+  color: white;
+  cursor: pointer;
+}
+
+.contactUs_Modal .contactUs_Modal--main .p_title, .login_Modal .contactUs_Modal--main .p_title, .reservationModel .contactUs_Modal--main .p_title, .messageBox .contactUs_Modal--main .p_title, .ConfirmReservationModel .contactUs_Modal--main .p_title {
+  margin-top: 30px;
+  font-size: 25px;
+}
+
+.contactUs_Modal .contactUs_Modal--main input, .login_Modal .contactUs_Modal--main input, .reservationModel .contactUs_Modal--main input, .messageBox .contactUs_Modal--main input, .ConfirmReservationModel .contactUs_Modal--main input {
+  width: 75%;
+  height: 30px;
+  border-radius: 5px;
+  cursor: text;
+}
+
+.contactUs_Modal .contactUs_Modal--main input:focus, .login_Modal .contactUs_Modal--main input:focus, .reservationModel .contactUs_Modal--main input:focus, .messageBox .contactUs_Modal--main input:focus, .ConfirmReservationModel .contactUs_Modal--main input:focus {
+  border-color: #C7081B;
+}
+
+.contactUs_Modal .contactUs_Modal--main .close, .login_Modal .contactUs_Modal--main .close, .reservationModel .contactUs_Modal--main .close, .messageBox .contactUs_Modal--main .close, .ConfirmReservationModel .contactUs_Modal--main .close {
+  position: absolute;
+  top: 0;
+  color: white;
+  right: 14px;
+  font-size: 42px;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  cursor: pointer;
+}
+
+/*Confirmation popUp*/
+.ConfirmReservationModel .ConfirmReservationModel--main {
+  width: 50%;
+  height: 1200px;
+  background-color: white;
+  border-radius: 4px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.ConfirmReservationModel .ConfirmReservationModel--main .ConfirmReservationModel--main--field {
+  margin-top: 10px;
+}
+
+.ConfirmReservationModel .ConfirmReservationModel--main .close {
+  position: absolute;
+  top: 20px;
+  right: 30%;
+  font-size: 42px;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  cursor: pointer;
+}
+
+.ConfirmReservationModel .ConfirmReservationModel--main .contactUs_Modal--main--field--Bouton {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.ConfirmReservationModel .ConfirmReservationModel--main .contactUs_Modal--main--field--Bouton button {
+  margin-top: 30px;
+  width: 30%;
+  height: 40px;
+  border-color: #C7081B;
+  background-color: transparent;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.ConfirmReservationModel .ConfirmReservationModel--main .contactUs_Modal--main--field--Bouton button:hover {
+  background-color: #C7081B;
+  color: white;
+  cursor: pointer;
+}
+
+.ConfirmReservationModel .ConfirmReservationModel--main .p_title {
+  margin-top: 30px;
+  font-size: 25px;
+}
+
+/**/
+/*pOP UP*/
+.bg-modal {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  position: fixed;
+  top: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: none;
+  z-index: 2;
+}
+
+.modal-content {
+  width: 100%;
+  height: 1200px;
+  background-color: white;
+  border-radius: 4px;
+  text-align: center;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.modal-content .close {
+  position: absolute;
+  top: 0;
+  right: 14px;
+  font-size: 42px;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  cursor: pointer;
+}
+
+.modal-content .taille {
+  width: 80px;
+}
+
+.modal-content .form {
+  margin-top: 50px;
+}
+
+.modal-content .form .slider_boutons {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.modal-content .form .slider_boutons button {
+  width: 50px;
+  height: 50px;
+  border: 0;
+  color: black;
+  background-color: transparent;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.modal-content .form .slider_boutons button:hover {
+  cursor: pointer;
+}
+
+.other_language {
+  display: none;
+  height: 25px;
+  width: 40px;
+  background-color: gray;
+  position: relative;
+  right: 53px;
+  top: 30px;
+  text-align: center;
+}
+
+.other_language span:hover {
+  cursor: pointer;
+}
+
+/*Declaration : */
+.Header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.Header .Header_Logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.Header .Header_Logo img {
+  height: 100px;
+}
+
+.Header .Header_Logo .Header_Logo--icon a {
+  text-decoration: none;
+}
+
+.Header .Header_Logo .Header_Logo--icon i {
+  font-size: 40px;
+  color: #C7081B;
+  margin-top: 55px;
+}
+
+.Header .Header_Menu {
+  margin-left: 18%;
+}
+
+.Header .Header_Menu ul li #id_profile:hover {
+  cursor: pointer;
+}
+
+.Header .Header_Menu ul li .Header_Menu--Link {
+  height: 40px;
+}
+
+.Header .Header_Menu ul li a:hover, .Header .Header_Menu ul li .activated {
+  -webkit-text-decoration: underline #C7081B;
+          text-decoration: underline #C7081B;
+}
+
+.Header .Header_Menu ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 55px;
+}
+
+.Header .Header_Menu ul li {
+  list-style: none;
+  padding-left: 15px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  line-height: 1.15;
+  font-size: 16px;
+}
+
+.Header .Header_Menu ul li a {
+  text-decoration: none;
+  color: #000;
+}
+
+.Header .Header_Menu ul li label i {
+  color: #C7081B;
+}
+
+.Header .Header_Menu ul li label:hover {
+  cursor: pointer;
+}
+
+.container .white_space {
+  height: 25px;
+}
+
+.container .container__background {
+  background-image: url("../Images/bg7.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 300px;
+}
+
+.container .container__below_bg {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.container .container__below_bg .container__below_bg--leftSide {
+  width: 400px;
+  height: 1980px;
+  background-color: rosybrown;
+}
+
+.container .container__below_bg .container__below_bg--rightSide {
+  height: 1980px;
+  width: 1100px;
+  margin-left: 30px;
+}
+
+.container .container__below_bg .container__below_bg--rightSide .div_table table {
+  border-collapse: separate;
+  border-spacing: 0 15px;
+  border: 3px solid #E3E3E3;
+  width: 100%;
+}
+
+.container .container__below_bg .container__below_bg--rightSide .div_table table tr td:last-child {
+  color: #E3E3E3;
+  font-size: 30px;
+}
+
+.container .container__below_bg .container__below_bg--rightSide .div_table table tr td:nth-last-child(2) {
+  color: #C7081B;
+  font-size: 30px;
+}
+
+.container .container__below_bg .container__below_bg--rightSide .div_table table td {
+  height: 50px;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.container .container__below_bg .container__below_bg--rightSide .div_table table td label {
+  margin-left: 50px;
+}
+
+.container .container__below_bg .container__below_bg--rightSide .div_table table td select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  /* Remove default arrow */
+  background-image: url("../Images/arrow_down.png");
+  /* Add custom arrow */
+  background-repeat: no-repeat;
+  background-position-x: right;
+  background-position-y: center;
+  border-radius: 8px;
+  width: 200px;
+  height: 50px;
+}
+
+.container .container__below_bg .container__below_bg--rightSide .div_table table i:hover {
+  cursor: pointer;
+}
+
+.container .container__below_bg .container__below_bg--rightSide .container__below_bg--rightSide--presentationBox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 20px;
+  border: solid 3px #E3E3E3;
+}
+
+.container .container__below_bg .container__below_bg--rightSide .container__below_bg--rightSide--presentationBox .div_carInfos--Link, .container .container__below_bg .container__below_bg--rightSide .container__below_bg--rightSide--presentationBox .div_carInfos--moreInfos {
+  margin-left: 30px;
+  margin-top: 15px;
+}
+
+.container .container__below_bg .container__below_bg--rightSide .container__below_bg--rightSide--presentationBox .div_carInfos--Link a, .container .container__below_bg .container__below_bg--rightSide .container__below_bg--rightSide--presentationBox .div_carInfos--moreInfos a {
+  text-decoration: none;
+  color: #000;
+}
+
+.container .container__below_bg .container__below_bg--rightSide .container__below_bg--rightSide--presentationBox .div_carInfos--Link .table_link tr td :nth-child(2), .container .container__below_bg .container__below_bg--rightSide .container__below_bg--rightSide--presentationBox .div_carInfos--moreInfos .table_link tr td :nth-child(2) {
+  color: #C7081B;
+}
+
+.container .container__below_bg .container__below_bg--rightSide .container__below_bg--rightSide--presentationBox .div_carInfos--Link table, .container .container__below_bg .container__below_bg--rightSide .container__below_bg--rightSide--presentationBox .div_carInfos--moreInfos table {
+  width: 100%;
+}
+
+.container .container__below_bg .container__below_bg--rightSide .container__below_bg--rightSide--presentationBox .div_carInfos--Link table tr, .container .container__below_bg .container__below_bg--rightSide .container__below_bg--rightSide--presentationBox .div_carInfos--moreInfos table tr {
+  height: 30px;
+}
+
+.container .container__below_bg .container__below_bg--rightSide .container__below_bg--rightSide--presentationBox .div_carInfos--Link table tr span, .container .container__below_bg .container__below_bg--rightSide .container__below_bg--rightSide--presentationBox .div_carInfos--Link table tr i, .container .container__below_bg .container__below_bg--rightSide .container__below_bg--rightSide--presentationBox .div_carInfos--moreInfos table tr span, .container .container__below_bg .container__below_bg--rightSide .container__below_bg--rightSide--presentationBox .div_carInfos--moreInfos table tr i {
+  color: #888888;
+}
+
+.container .container__below_bg .container__below_bg--rightSide .container__below_bg--rightSide--presentationBox .Div_Actions {
+  margin-top: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+.container .container__below_bg .container__below_bg--rightSide .container__below_bg--rightSide--presentationBox .Div_Actions .Div_Actions--Element {
+  width: 230px;
+  height: 60px;
+  border-top-style: solid;
+  border-right-style: solid;
+  border-color: #E3E3E3;
+}
+
+.container .container__below_bg .container__below_bg--rightSide .container__below_bg--rightSide--presentationBox .Div_Actions .Div_Actions--Element p {
+  text-align: center;
+  font-size: 16px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  margin-top: 20px;
+}
+
+.container .container__below_bg .container__below_bg--rightSide .container__below_bg--rightSide--presentationBox .Div_Actions .Div_Actions--Element p i {
+  font-size: 20px;
+  color: #C7081B;
+}
+
+.container .container__below_bg .container__below_bg--rightSide .container__below_bg--rightSide--presentationBox .Div_Actions .Div_Actions--Element:hover {
+  cursor: pointer;
+  background-color: #C7081B;
+}
+
+.container .container__below_bg .container__below_bg--rightSide .container__below_bg--rightSide--presentationBox .Div_Actions .Div_Actions--Element:hover i, .container .container__below_bg .container__below_bg--rightSide .container__below_bg--rightSide--presentationBox .Div_Actions .Div_Actions--Element:hover p {
+  color: white;
+}
+
+.footer {
+  background-color: #000;
+  width: 100%;
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footer .footer__leftSide {
+  margin-top: 17px;
+  width: 60%;
+}
+
+.footer .footer__leftSide span {
+  color: #E3E3E3;
+  padding-left: 20px;
+}
+
+.footer .footer__rightSide {
+  margin-top: 17px;
+  float: right;
+}
+
+.footer .footer__rightSide ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footer .footer__rightSide ul li {
+  list-style: none;
+}
+
+.footer .footer__rightSide ul li a {
+  padding-left: 20px;
+  color: #E3E3E3;
+  text-decoration: none;
+}
+
+/*Slider*/
+ul, ol {
+  list-style: none;
+}
+
+.main {
+  width: 75%;
+  margin-top: 30px;
+  margin-right: auto;
+  margin-left: auto;
+  overflow: hidden;
+  color: #fff;
+}
+
+.slider {
+  position: relative;
+}
+
+.slider .slider-parent {
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.slider .slider-parent .images-list {
+  background-size: cover;
+}
+
+.slider .slider-parent .images-list:first-of-type, .slider .slider-parent .images-list:last-of-type {
+  background-image: url("../Images/bg1.jpg");
+}
+
+.slider .slider-parent .images-list:nth-of-type(2) {
+  background-image: url("../Images/bg3.jpg");
+}
+
+.slider .slider-parent .images-list:nth-of-type(3) {
+  background-image: url("../Images/bg4.jpg");
+}
+
+.slider .slider-parent .images-list:nth-of-type(4) {
+  background-image: url("../Images/bg6.jpg");
+}
+
+.slider .slider-parent .images-list:nth-of-type(5) {
+  background-image: url("../Images/bg7.jpg");
+}
+
+.slider .buttom-circles {
+  position: absolute;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  left: 50%;
+  bottom: 10px;
+}
+
+.slider .buttom-circles .buttom-circles-list {
+  display: inline-block;
+}
+
+.slider .buttom-circles .buttom-circles-list:hover .fa:before, .slider .buttom-circles .buttom-circles-list.slider-active .fa:before {
+  content: "\f111";
+}
+
+.slider > .fa {
+  position: absolute;
+  top: 45%;
+}
+
+.slider > .fa:first-of-type {
+  right: 5px;
+}
+
+.slider > .fa:last-of-type {
+  left: 5px;
+}
+
+.slider .fa {
+  text-shadow: 5px 5px 5px #555;
+  cursor: pointer;
+}
+
+@media (min-width: 100px) and (max-width: 767px) {
+  .slider > .fa {
+    font-size: 25px;
+  }
+  .slider .buttom-circles .buttom-circles-list {
+    visibility: hidden;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .slider > .fa {
+    font-size: 50px;
+  }
+  .slider .buttom-circles .buttom-circles-list {
+    visibility: hidden;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .slider > .fa {
+    font-size: 75px;
+  }
+  .slider .buttom-circles .buttom-circles-list {
+    font-size: 17px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .slider > .fa {
+    font-size: 100px;
+  }
+  .slider .buttom-circles .buttom-circles-list {
+    font-size: 25px;
+  }
+}
+
+/********************************/
+/*Media Query Gallery*/
+@media (max-width: 1100px) and (min-width: 420px) {
+  .footer {
+    margin-top: 1200px;
+    height: 100px;
+    display: block;
+  }
+  .footer .footer__rightSide {
+    margin: 0;
+    padding: 0;
+  }
+  .footer .footer__rightSide .class_ul_footer {
+    display: block;
+  }
+  .Header {
+    display: block;
+  }
+  #myTopnav {
+    margin: 0;
+  }
+  #myTopnav li {
+    padding: 0;
+    margin-top: 25px;
+  }
+  #myTopnav li .Header_Menu--Link:hover a {
+    cursor: pointer;
+    color: white;
+  }
+  .Header_Menu {
+    width: 100%;
+    height: 450px;
+    background-color: #C7081B;
+  }
+  .Header_Menu ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+  }
+  .Header_Menu ul li {
+    padding-top: 20px;
+  }
+  .Header_Logo .Header_Logo--icon i {
+    display: block;
+  }
+  .Header_Logo .Header_Logo--img p {
+    text-align: center;
+  }
+  .Header_Logo .Header_Logo--img img {
+    height: 100%;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .container__below_bg--rightSide--presentationBox {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .Div_Actions {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+  }
+  .Div_Actions .Div_Actions--Element {
+    width: 100%;
+  }
+  .div_carInfos--Link table td {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+/*Nav bar*/
+/*# sourceMappingURL=style.css.map */

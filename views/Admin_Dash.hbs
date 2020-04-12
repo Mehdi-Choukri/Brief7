@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    table * {
+  position: relative;
+}
+table td, table th {
+  padding-left: 8px;
+}
+table thead tr {
+  height: 60px;
+  background: #36304a;
+}
+table tbody tr {
+  height: 50px;
+}
+table tbody tr:last-child {
+  border: 0;
+}
+table td, table th {
+  text-align: left;
+}
+table td.l, table th.l {
+  text-align: right;
+}
+table td.c, table th.c {
+  text-align: center;
+}
+table td.r, table th.r {
+  text-align: center;
+}
+
+
+.table100-head th{
+  font-family: OpenSans-Regular;
+  font-size: 18px;
+  color: #fff;
+  line-height: 1.2;
+  font-weight: unset;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #f5f5f5;
+}
+
+tbody tr {
+  font-family: OpenSans-Regular;
+  font-size: 15px;
+  color: #808080;
+  line-height: 1.2;
+  font-weight: unset;
+}
+    .container-table100 {
+  width: 90%;
+  min-height: 100vh;
+  
+
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 33px 30px;
+}
+.car_table
+{
+     border-spacing: 1;
+  border-collapse: collapse;
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  width: 80%;
+  margin: 0 auto;
+  position: relative;
+}
+td{
+    border: 1px solid black;
+}
+thead{
+    font-family: OpenSans-Regular;
+  font-size: 18px;
+  color: white;
+  line-height: 1.2;
+  font-weight: unset;
+}
+tbody tr {
+  font-family: OpenSans-Regular;
+  font-size: 15px;
+  color: #808080;
+  line-height: 1.2;
+  font-weight: unset;
+}
+tbody tr:hover {
+  color: #555555;
+  background-color: #f5f5f5;
+  cursor: pointer;
+}
+.car_table button
+{
+    width:100px;
+}
+.wrap-table100 {
+  width: 1170px;
+}
+ input
+{
+ width:100px;
+}
+.CarImage
+{
+    width:120px;
+    height:60px;
+}
+.CarImage:hover
+{
+    width:200px;
+    height:160px;
+}
+.hiddenImage,.hiddenId
+{
+    visibility: hidden;
+}
+</style>
+<body>
+    <form id="_form" method="POST">
+
+  <div class="container-table100">
+      <div class="wrap-table100">
+        <table class="car_table">
+        <thead class="table100-head">
+             
+                
+                    <td>Photo</td>
+                    <td>Year</td>
+                    <td>Make</td>
+                    <td>Model</td>
+                    <td>Mileage</td>
+                    <td>Drivetrain</td>
+                    <td>ExteriorColor</td>
+                    <td>InteriorColor</td>
+                    <td>Doors</td>
+                    <td>Price</td>
+                    <td>Action</td>
+
+                
+            
+        </thead>
+       
+              {{#each inforCars_notEmpty}}
+               <tbody>
+                                <input type="text" class="hiddenId" id="id_carInput" name="idCarInput" >
+                            <input type="text" class="hiddenImage" name="ImageInput" disabled value="{{this.Image}}">
+                            <td><img class="CarImage"name="Image" src="{{this.Image}}" alt="" srcset=""></td>
+                             <td><input type="text"  name="Year" value="{{this.Year}}" disabled ></td>
+                              <td><input type="text" name="Make" value="{{this.Make}}" disabled ></td>
+                               <td><input type="text" name="Model" value="{{this.Model}}" disabled ></td>
+                                <td><input type="text" name="Mileage" value="{{this.Mileage}}" disabled ></td>
+                                 <td><input type="text" name="Drivetrain" value="{{this.Drivetrain}}" disabled ></td>
+                                  <td><input type="text" name="ExteriorColor" value="{{this.ExteriorColor}}" disabled ></td>
+                                   <td><input type="text" name="InteriorColor" value="{{this.InteriorColor}}" disabled ></td>
+                                    <td><input type="text" name="Doors" value="{{this.Doors}}" disabled ></td>
+                             
+                            <td><input type="text" name="Price" value="{{this.Price}}" disabled ></td>
+                            <td><button class="updateBtn">Update</button> <button class="deleteBTN" name="{{this.IdCar}}" id="{{this.IdCar}}">Delete</button></td>
+                            </tbody>
+                        {{/each}}
+                        <tbody>
+                            <td><input type="file" name="ImageAdd"></td>
+                            <td><input type="text"  name="Year"></td>
+                            <td><input type="text" name="Make"></td>
+                            <td><input type="text" name="Model"></td>
+                            <td><input type="text" name="Mileage"></td>
+                            <td><input type="text" name="Drivetrain"></td>
+                            <td><input type="text" name="ExteriorColor"></td>
+                            <td><input type="text" name="InteriorColor"></td>
+                            <td><input type="text" name="Doors"></td>
+                            <td><input type="text" name="Price"></td>
+                            <td><button id="btn_Add">Add</button> <button>Cancel</button></td>
+                        </tbody>
+                        
+
+         
+    </table>
+    <button id="id_SaveChange">Save Change</button>
+</div>
+  </div>
+ </form>
+  <script>
+    
+
+    var btn_update = document.getElementsByClassName('updateBtn');
+    var inputs  = document.getElementsByTagName('input');
+    var form=document.getElementById('_form');
+   for(var i=0;i<btn_update.length;i++)
+   {
+        btn_update[i].addEventListener('click',(e)=>{
+            form.setAttribute('action','/update');
+            e.preventDefault();
+
+        for(var j=0;j<inputs.length;j++)
+        { 
+             
+                inputs[j].disabled=!inputs[j].disabled;
+               
+     
+             
+         
+            
+
+        }
+    
+       
+
+    })
+   }
+//add option 
+var btnAdd = document.getElementById('btn_Add');
+
+btnAdd.addEventListener('click',(e)=>{
+ var error =false;
+    form.setAttribute('action','/addCar'); 
+    var inputLength = inputs.length;
+    for(var i=inputLength-10;i<=inputLength;i++)
+    {
+        
+        
+         if(inputs[i].value=='')
+        {
+                e.preventDefault();
+                
+            error=true;
+            break;
+        }
+        
+    }
+    if(error==true)
+    {
+         e.preventDefault(); 
+        alert("les champs sont obligatoires");
+    }
+     
+        
+                 
+   
+    
+  
+
+})
+var btnSave = document.getElementById('id_SaveChange');
+
+btnSave.addEventListener('click',(e)=>{
+    form.setAttribute('action','/update'); 
+
+})
+ 
+var btnDelete = document.getElementsByClassName('deleteBTN');
+var idCar = document.getElementById('id_carInput');
+
+  for(var i=0;i<btnDelete.length;i++)
+   {
+        btnDelete[i].addEventListener('click',(e)=>{
+            form.setAttribute('action','/DeleteCar');
+           
+            idCar.value=e.target.name;
+
+          // {{!-- alert(e.target.name); --}}
+            alert(idCar.value);
+
+       
+    
+       
+
+    })
+   }
+ 
+
+</script>
+    
+</body>
+
+</html>

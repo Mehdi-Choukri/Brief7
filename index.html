@@ -1,0 +1,732 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Car Gallery</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="Style/style.css">
+</head>
+<body>
+     
+    <header class="Header">
+        <div class="Header_Logo">
+            <div class="Header_Logo--icon">
+                <input type="checkbox" name="chk" id="chk">
+                <label for="chk"><a href="javascript:void(0);" onclick="myFunction()"><i class="fas fa-bars"></i></a></label>
+
+            </div>
+            <div class="Header_Logo--img">
+                <p><img src="Images/logo_FwgCUgnO.png" alt=""></p>
+            </div>
+
+        </div>
+        <div class="Header_Menu" id="myTopnav">
+            <ul>
+                <li>
+                    <div class="Header_Menu--Link activate"><a class="menu_link_name"  href="">HOME</a></div>
+                   
+                </li>
+                <li>
+                    <div class="Header_Menu--Link">     <a class="menu_link_name"  href="">GALLERY</a></div>
+                 
+                    
+                </li>
+                <li>
+                    <div class="Header_Menu--Link">  <a class="menu_link_name"  href="">ABOUT US</a></div>
+                   
+                </li>
+                <li>
+                    <div class="Header_Menu--Link"><a  class="menu_link_name" href="">CONTACT US</a> </div>
+                    
+                </li>
+                <li>
+                    <div class="Header_Menu--Link">  <a class="menu_link_name"  href="">CREDIT APPLICATION</a> </div>
+                  
+                </li>
+                <li>
+                     
+                    <a id="id_profile"><i class="fas fa-bars"></i></a>
+                </li>
+                <li>
+                   <div class="lang_grp">
+                    <label id="label_Langue" onclick="language_click()" for=""> <div class="Header_Menu--Link">  <a class="menu_link_name"  href="#">EN </a> </div> <i class="fas fa-chevron-down"></i></label>
+                    
+                    <li><div class="other_language" onclick="language_Changer()" id ="id_other_language"><span id="id_lang">FR</span></div></li>
+                   </div>
+                </li>
+            </ul>
+          
+
+        </div>
+
+    </header>
+    <div class="container">
+        <div class="container__backgrounds">
+            <div class="main">
+                <div id="slider_id" class="slider">
+                  <ul class="slider-parent">
+                    <li class="images-list" data-slider="1"></li>
+                    <li class="images-list" data-slider="2"></li>
+                    <li class="images-list" data-slider="3"></li>
+                    <li class="images-list" data-slider="4"></li>
+                    <li class="images-list" data-slider="5"></li>
+                    <li class="images-list" data-slider="6"></li>
+                  </ul>
+                  <ol class="buttom-circles">
+                    <li class="buttom-circles-list slider-active" data-slider="1"><i class="fa fa-circle-thin"></i></li>
+                    <li class="buttom-circles-list" data-slider="2"><i class="fa fa-circle-thin"></i></li>
+                    <li class="buttom-circles-list" data-slider="3"><i class="fa fa-circle-thin"></i></li>
+                    <li class="buttom-circles-list" data-slider="4"><i class="fa fa-circle-thin"></i></li>
+                    <li class="buttom-circles-list" data-slider="5"><i class="fa fa-circle-thin"></i></li>
+                    <li class="buttom-circles-list" data-slider="6"></li>
+                  </ol>
+                  <i class="fa fa-chevron-right fa-5x"></i>
+                  <i class="fa fa-chevron-left fa-5x"></i>
+                </div>
+              </div>
+
+        </div>
+        <div class="white_space">
+
+        </div>
+        <div class="container__below_bg">
+           
+            <div class="container__below_bg--rightSide"> 
+                <div class="div_table">
+                    <table>
+                        <tr> <td><label for="">Sort By :</label></td> <td><select name="Select_Sort" id=""><option value="Sort Option">Sort Option</option></select></td> 
+                        
+                            <td> </td><td><i class="display_icons fas fa-th-list"></i></td><td><i class="display_icons fas fa-th"></i></td>
+                        </tr>
+                    </table>
+
+                </div>
+                <!--First car-->
+                <div class="container__below_bg--rightSide--presentationBox">
+                    <div class="div_carImage">
+                        <img class="sold_car" src="Images/audi.jpg" alt="">
+
+                    </div>
+                    <div class="div_carInfos">
+                        <div class="div_carInfos--Link">
+                            <table> 
+                                <tr>
+                                    <td><a href="">2011 AUDI A4 2.0T QUATTRO PREMIUM PLUS AWD 4DR SEDAN 8A</a></td>
+                                    <td><a class="price_link" href=""><p>$7500</p> </a></td>
+                                
+                                
+                                </tr>
+                            </table>
+
+                        </div>
+                        <div class="div_carInfos--moreInfos">
+                            <table>
+                                <tr>
+                                    <td><i class="fas fa-tachometer-alt"></i> <span>125,367 Miles</span></td>
+                                    
+                                    <td><i class="fas fa-cogs"></i> <span>Automatic</span>  </td>
+                                
+                                  
+
+                                </tr>
+                               
+                                <tr>  <td><i class="fas fa-palette"></i> <span>Black</span></td></tr>
+                                
+                                <tr>
+                                    <td><i class="fas fa-door-closed"></i><span>4 Doors</span> </td>
+                                    <td><i class="fas fa-oil-can"></i>  <span>2.0L I4</span></td>
+                                </tr>
+                            </table>
+
+                        </div>
+
+                        <div class="Div_Actions">
+                            <div class="Div_Actions--Element button-3">
+                                <p><i class="far fa-check-circle"></i> <span  class="lang_btn">Check Availability</span> </p>
+
+                            </div>
+                            <div class="Div_Actions--Element button-2">
+                                
+                                <p> <i class="far fa-comment-dots"></i> <span class="lang_btn"> Contact us</span></p>
+                            </div>
+                            <div class="Div_Actions--Element button-1" >
+
+                               
+                                <p>  <i class="fas fa-search"></i> <span  class="lang_btn">View Details</span>  </p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                 <!--Second car-->
+                 <div class="container__below_bg--rightSide--presentationBox">
+                    <div class="div_carImage">
+                        <img class="sold_car" src="Images/chev.jpg" alt="">
+
+                    </div>
+                    <div class="div_carInfos">
+                        <div class="div_carInfos--Link">
+                            <table> 
+                                <tr>
+                                    <td><a href="">2014 Chevrolet Impala LS 4dr Sedan</a></td>
+                                    <td><a class="price_link" href=""><p>$10,500</p> </a></td>
+                                
+                                
+                                </tr>
+                            </table>
+
+                        </div>
+                        <div class="div_carInfos--moreInfos">
+                            <table>
+                                <tr>
+                                    <td><i class="fas fa-tachometer-alt"></i> <span>46,055 Miles</span></td>
+                                    
+                                    <td><i class="fas fa-cogs"></i> <span>Automatic</span>  </td>
+                                
+                                  
+
+                                </tr>
+                               
+                                <tr>  <td><i class="fas fa-palette"></i> <span>White</span></td></tr>
+                                
+                                <tr>
+                                    <td><i class="fas fa-door-closed"></i><span>4 Doors</span> </td>
+                                    <td><i class="fas fa-oil-can"></i>  <span>2.5L I4</span></td>
+                                </tr>
+                            </table>
+
+                        </div>
+
+                        <div class="Div_Actions">
+                            <div class="Div_Actions--Element button-3">
+                                <p><i class="far fa-check-circle"></i> <span class="lang_btn">Check Availability</span> </p>
+
+                            </div>
+                            <div class="Div_Actions--Element button-2">
+                                
+                                <p> <i class="far fa-comment-dots"></i> <span class="lang_btn"> Contact us</span></p>
+                            </div>
+                            <div class="Div_Actions--Element button-1">
+
+                               
+                                <p>  <i class="fas fa-search"></i> <span class="lang_btn">View Details</span>  </p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                 <!--third car-->
+                 <div class="container__below_bg--rightSide--presentationBox">
+                    <div class="div_carImage">
+                        <img class="sold_car" src="Images/dodge.jpg" alt="">
+
+                    </div>
+                    <div class="div_carInfos">
+                        <div class="div_carInfos--Link">
+                            <table> 
+                                <tr>
+                                    <td><a href="">2016 DODGE CHALLENGER SXT PLUS 2DR COUPE</a></td>
+                                    <td><a class="price_link" href=""><p>$13,500</p> </a></td>
+                                
+                                
+                                </tr>
+                            </table>
+
+                        </div>
+                        <div class="div_carInfos--moreInfos">
+                            <table>
+                                <tr>
+                                    <td><i class="fas fa-tachometer-alt"></i> <span>100,433 Miles</span></td>
+                                    
+                                    <td><i class="fas fa-cogs"></i> <span>Automatic</span>  </td>
+                                
+                                  
+
+                                </tr>
+                               
+                                <tr>  <td><i class="fas fa-palette"></i> <span>Red</span></td></tr>
+                                
+                                <tr>
+                                    <td><i class="fas fa-door-closed"></i><span>4 Doors</span> </td>
+                                    <td><i class="fas fa-oil-can"></i>  <span>3.6L V6</span></td>
+                                </tr>
+                            </table>
+
+                        </div>
+
+                        <div class="Div_Actions">
+                            <div class="Div_Actions--Element button-3">
+                                <p><i class="far fa-check-circle"></i> <span class="lang_btn">Check Availability</span> </p>
+
+                            </div>
+                            <div class="Div_Actions--Element button-2">
+                                
+                                <p> <i class="far fa-comment-dots"></i> <span class="lang_btn"> Contact us</span></p>
+                            </div>
+                            <div class="Div_Actions--Element button-1">
+
+                               
+                                <p>  <i class="fas fa-search"></i> <span class="lang_btn">View Details</span>  </p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+                 <!--fourth car-->
+                 <div class="container__below_bg--rightSide--presentationBox">
+                    <div class="div_carImage">
+                        <img class="sold_car" src="Images/cadi.jpg" alt="">
+
+                    </div>
+                    <div class="div_carInfos">
+                        <div class="div_carInfos--Link">
+                            <table> 
+                                <tr>
+                                    <td><a href="">2012 GMC Acadia Denali 4dr SUV</a></td>
+                                    <td><a class="price_link" href=""><p>$11,500</p> </a></td>
+                                
+                                
+                                </tr>
+                            </table>
+
+                        </div>
+                        <div class="div_carInfos--moreInfos">
+                            <table>
+                                <tr>
+                                    <td><i class="fas fa-tachometer-alt"></i> <span>109,760  Miles</span></td>
+                                    
+                                    <td><i class="fas fa-cogs"></i> <span>Automatic</span>  </td>
+                                
+                                  
+
+                                </tr>
+                               
+                                <tr>  <td><i class="fas fa-palette"></i> <span>Black</span></td></tr>
+                                
+                                <tr>
+                                    <td><i class="fas fa-door-closed"></i><span>4 Doors</span> </td>
+                                    <td><i class="fas fa-oil-can"></i>  <span> 3.6L V6</span></td>
+                                </tr>
+                            </table>
+
+                        </div>
+
+                        <div class="Div_Actions">
+                            <div class="Div_Actions--Element button-3">
+                                <p><i class="far fa-check-circle"></i> <span class="lang_btn">Check Availability</span> </p>
+
+                            </div>
+                            <div class="Div_Actions--Element button-2">
+                                
+                                <p> <i class="far fa-comment-dots"></i> <span class="lang_btn"> Contact us</span></p>
+                            </div>
+                            <div class="Div_Actions--Element button-1">
+
+                               
+                                <p>  <i class="fas fa-search"></i> <span class="lang_btn">View Details</span>  </p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+    <div class="footer">
+        <div class="footer__leftSide">
+            <span>
+                Designed By Mehdi
+            </span>
+            <span><i class="fab fa-facebook-square"></i></span>
+            <span><i class="fab fa-linkedin"></i></span>
+            <span><i class="fas fa-envelope"></i></span>
+
+        </div>
+        <div class="footer__rightSide">
+            <ul class="class_ul_footer">
+                <li><a href="">Privacy Policy</a></li>
+                <li><a href="">Site Map</a></li>
+                <li><a href="">Connect with us</a></li>
+            </ul>
+
+        </div>
+
+    </div>
+    
+    
+    <!--Pop Up-->
+
+    <div class="bg-modal">
+        <div class="modal-content">
+            <div id="id_close"  class="close">+</div>
+            <!-- <img src="Images/img5.png" class="taille" alt="logo"> -->
+
+           <div class="modal-content_container">
+            <div class="modal-content_container--table">
+                <table>
+                    <tr>
+                        <td><span class="table-info-1 table-infos">Year:</span></td>
+                        <td><span class="table-infos"></span></td>
+
+                    </tr>
+                    <tr>
+                        <td><span class="table-info-1 table-infos">Make:</span></td>
+                        <td><span class="table-infos"></span></td>
+
+                    </tr>
+                    <tr>
+                        <td><span class="table-info-1 table-infos">Model</span></td>
+                        <td><span class="table-infos"></span></td>
+
+                    </tr>
+                    <tr>
+                        <td><span class="table-info-1 table-infos">Mileage:</span></td>
+                        <td><span class="table-infos"></span></td>
+
+                    </tr>
+                    <tr>
+                        <td><span class="table-info-1 table-infos">Drivetrain :</span></td>
+                        <td><span class="table-infos"></span></td>
+
+                    </tr>
+                    <tr>
+                        <td><span class="table-info-1 table-infos">Exterior color:</span></td>
+                        <td><span class="table-infos"></span></td>
+
+                    </tr>
+                    <tr>
+                        <td><span class="table-info-1 table-infos">Interior color :</span></td>
+                        <td><span class="table-infos"> </span></td>
+
+                    </tr>
+                    <tr>
+                        <td><span class="table-info-1 table-infos">Doors :</span></td>
+                        <td><span class="table-infos"> </span></td>
+
+                    </tr>
+                  
+
+                </table> 
+                
+                     <button id="id_buyBouton" class="table-info-1 table-btn table-infos">Buy</button>
+                    <button id="id_rentBouton" class="table-info-1 table-btn table-infos">Rent</button>
+
+                
+
+            </div>
+            <div class="form">
+              <!-- <input type="Email" placeholder="Email" class="entrer">
+              <div class="erreur"></div>
+              <input type="password" placeholder="Mot passe" class="entrer">
+              <div class="erreur"></div>
+              <a  class="button" class="btnconnecter" id="btncss">Se connecter</a> -->
+              <div class="modal-content__title">
+                  <p><span id="id_target">Lorem ipsum, dolor quidem ullam perferendis, omnis placeat aliquid ea doloribus?</span></p>
+              </div>
+              
+              <div class="w3-content w3-display-container">
+                
+                <img class="mySlides" >
+                <img class="mySlides" >
+                <img class="mySlides" >
+                <img class="mySlides" >
+                <div class="slider_boutons">
+                    <button class="w3-button w3-display-left">&#10094;</button>
+                    <button class="w3-button w3-display-right">&#10095;</button>
+
+                </div>
+                
+              
+
+              </div>
+            
+        </div>
+        <div class="modal-content_container--rightSide">
+           <div class="modal-content_container--rightSide-first">
+               
+               
+               <table>
+                   <tr>
+                       <td><span class="table-info-1">Price</span></td>
+                       <td><span class="table-infos"></span></td>
+                   </tr>
+               </table>
+
+           </div>
+           <div class="modal-content_container--rightSide--buttom">
+                <div class="Div_Actions--Element_popUp">
+                    <p ><span class="table-info-1">Schedule a Test-Drive</span></p>
+                    </div>
+                    <div class="Div_Actions--Element_popUp">
+                        <p class="table-info-1">Name Your Price</p>
+                        </div>
+                        <div class="Div_Actions--Element_popUp">
+                            <p class="table-info-1">Apply For a Rent Application</p>
+                            </div>
+                            <div class="Div_Actions--Element_popUp">
+                                <p class="table-info-1">Contact Us</p>
+                                </div>
+               
+           </div>
+
+        </div>
+        
+           </div>
+    </div>
+    </div>
+    <!-- sign up popup-->
+    <div class="contactUs_Modal">
+        <form action="/register" method="POST">
+            <div class="contactUs_Modal--main">
+                <div id="id_close_contactus"  class="close">+</div>
+                <p class="p_title">Sign up</p>
+                <div class="contactUs_Modal--main--field">
+                    <p><span class="contactUs">Id Card</span></p>
+                    <input type="text" class="contactUs_input" name="cin" id="id_Cin">
+                    <span class="register_error"></span>
+    
+                </div>
+                <div class="contactUs_Modal--main--field">
+                    <p><span class="contactUs">First Name</span></p>
+                    <input type="text" class="contactUs_input" name="prenom" id="id_firstName">
+                    <span class="register_error"></span>
+    
+                </div>
+                <div class="contactUs_Modal--main--field">
+                    <p><span class="contactUs">Last Name</span></p>
+                    <input type="text" class="contactUs_input" name="nom" id="id_LastName">
+                    <span class="register_error"></span>
+    
+                </div>
+                <div class="contactUs_Modal--main--field">
+                    <p><span class="contactUs">Email</span></p>
+                    <input type="text" class="contactUs_input" name="email" id="id_Email">
+                    <span class="register_error"></span>
+    
+                </div>
+                <div class="contactUs_Modal--main--field">
+                    <p><span class="contactUs">Password</span></p>
+                    <input type="password" class="contactUs_input" name="pw" id="id_Password"  onkeyup="check_confirmPW()">
+                    <span class="register_error"></span>
+                </div>
+                <div class="contactUs_Modal--main--field">
+                    <p><span class="contactUs">Confirm Password</span></p>
+                    <input type="password" class="contactUs_input" id="id_ConfirmPw" onkeyup="check_confirmPW()">
+                    <span id="id_confirm_pw_error" class="register_error"></span>
+    
+                </div>
+                <div class="contactUs_Modal--main--field--Bouton">
+                    <button class="contactUs_Modal--main--field--BoutonRegister">Register</button> <button class="contactUs_Modal--main--field--BoutonCancel">Cancel</button>
+    
+                </div>
+    
+            </div>
+    
+        </form>
+        
+    </div>
+    <!--reservation pop up-->
+    <div class="reservationModel">
+        <form action="/reservation" method="POST">
+            <div class="reservationModel--main">
+                <div id="id_close_reservation"  class="close">+</div>
+                <p class="p_title">Rent Application</p>
+                <div class="contactUs_Modal--main--field">
+                    <p><span class="contactUs">Id Card</span></p>
+                    <input type="text" class="reservation_input" name="idCard"  id="id_Cin_reservation">
+                    <span class="apply_error"></span>
+    
+                </div>
+                <div class="contactUs_Modal--main--field">
+                    <p><span class="contactUs">Car</span></p>
+                    <input type="text" class="reservation_input" name="car"  id="id_car_reservation">
+                    <span class="apply_error"></span>
+    
+                </div>
+                <div class="contactUs_Modal--main--field">
+                    <p><span class="contactUs">First Name</span></p>
+                    <input type="text" class="reservation_input" disabled id="id_firstName_reservation">
+                    <span class="apply_error"></span>
+    
+                </div>
+                <div class="contactUs_Modal--main--field">
+                    <p><span class="contactUs">Last Name</span></p>
+                    <input type="text" class="reservation_input" disabled id="id_LastName_reservation">
+                    <span class="apply_error"></span>
+    
+                </div>
+                <div class="contactUs_Modal--main--field">
+                    <p><span class="contactUs">Email</span></p>
+                    <input type="text" class="reservation_input" disabled id="id_Email_reservation">
+                    <span class="apply_error"></span>
+    
+                </div>
+                <div class="contactUs_Modal--main--field">
+                    <p><span class="contactUs">Start Date</span></p>
+                    <input type="date" class="reservation_input" name="startDate" id="id_Sdate_reservation">
+                    <span class="apply_error"></span>
+                </div>
+                <div class="contactUs_Modal--main--field">
+                    <p><span class="contactUs">End Date</span></p>
+                    <input type="date" class="reservation_input" name="endDate" onchange="OnchangeDateToCalculatePrice()" id="id_Edate_reservation">
+                    <span id="id_confirm_pw_error" class="apply_error"></span>
+    
+                </div>
+                <div class="contactUs_Modal--main--field">
+                    <p><span class="contactUs">Price</span></p>
+                    <input type="text"  class="reservation_input" name="price" id="id_price_reservation" >
+                    <br>
+                    <span id="price_error" class="apply_error"></span>
+    
+                </div>
+                <div class="contactUs_Modal--main--field--Bouton">
+                    <button class="contactUs_Modal--main--field--BoutonApply">Apply</button> <button class="contactUs_Modal--main--field--BoutonCancel">Cancel</button>
+    
+                </div>
+    
+            </div>
+        </form>
+
+    </div>
+
+    <div class="messageBox">
+        
+        <div class="messageBox_MainMessage">
+            <div class="messageBox_MainMessage--message">
+                <p >You are not Registred yet  Please register to continue</p>
+
+            </div>
+            <div  class="messageBox_MainMessage--button">
+                <button id="id_btn_register">Register</button>
+                <button id="id_SignInButton">Sign in</button>
+
+            </div>
+
+        </div>
+       
+
+    </div>
+    <div id="id_msg_popUP" class="messageBox messageBox2">
+        <div class="messageBox_MainMessage">
+            <div class="messageBox_MainMessage--message">
+                <p id="id_msgTxt">This option isn't available yet</p>
+
+            </div>
+            <div  class="messageBox_MainMessage--button">
+                 
+                <button id="id_BackNowButton">Back Now</button>
+
+            </div>
+
+        </div>
+
+    </div>
+    <!---->
+
+    <div class="ConfirmReservationModel">
+        <div class="ConfirmReservationModel--main">
+            <div id="id_close_Confirmreservation"  class="close">+</div>
+            <p class="p_title">Rent Confirmation</p>
+
+
+            <div class="ConfirmReservationModel--main--field">
+                <p><img class="ConfirmReservationModel--Car" alt=""></p>
+                 <p><span class="reservationConfirm"></span></p>
+
+            </div>
+ 
+            <div class="ConfirmReservationModel--main--field">
+                <p><span class="reservationConfirm">Id Card :</span><span class="reservationConfirm_span"></span></p>
+                 
+
+            </div>
+            
+            <div class="ConfirmReservationModel--main--field">
+                <p><span class="reservationConfirm">Car:</span><span class="reservationConfirm_span"></span></p>
+            
+
+            </div>
+            <div class="ConfirmReservationModel--main--field">
+                <p><span class="reservationConfirm">First Name :</span><span class="reservationConfirm_span"></span></p>
+                 
+
+            </div>
+            
+            <div class="ConfirmReservationModel--main--field">
+                <p><span class="reservationConfirm">Last Name :</span><span class="reservationConfirm_span"></span></p>
+             
+
+            </div>
+            <div class="ConfirmReservationModel--main--field">
+                <p><span class="reservationConfirm">Days :</span><span class="reservationConfirm_span"></span></p>
+                
+
+            </div>
+            
+            <div class="ConfirmReservationModel--main--field">
+                <p><span class="reservationConfirm">Price :</span><span class="reservationConfirm_span"></span></p>
+             
+
+            </div>
+         
+            <div class="contactUs_Modal--main--field--Bouton">
+                <button class="contactUs_Modal--main--field--BoutonConfirm">Confirm</button> <button class="contactUs_Modal--main--field--BoutonGoBack">Go back</button>
+
+            </div>
+
+        </div>
+
+    </div>
+    <!-- Pop Up sign in-->
+     <div class="login_Modal">
+       <form id="_form" method="POST" action="/login">
+        <div class="contactUs_Modal--main">
+            <div id="id_close_login"  class="close">+</div>
+            <p class="p_title">Sign up</p>
+           
+            <div class="contactUs_Modal--main--field">
+                <p><span class="contactUs">Email</span></p>
+                <input type="text" class="contactUs_input" name="email" id="id_Email">
+                <span class="register_error"></span>
+
+            </div>
+            <div class="contactUs_Modal--main--field">
+                <p><span class="contactUs">Password</span></p>
+                <input type="password" class="contactUs_input" name="password" id="id_Password"  onkeyup="check_confirmPW()">
+                <span class="register_error"></span>
+            </div>
+             
+            <div class="contactUs_Modal--main--field--Bouton">
+                <button class="contactUs_Modal--main--field--BoutonRegister">Login</button> <button class="contactUs_Modal--main--field--BoutonCancel">Cancel</button>
+
+            </div>
+
+        </div>
+       </form>
+
+    </div>  
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script  src="Script/main.js"></script>
+
+     
+</body>
+
+</html>

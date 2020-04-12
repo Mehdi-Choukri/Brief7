@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="Style/style1.css">
+    
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+<style>
+  .error {
+  color: red;
+  font-size: 20px;
+}
+
+/*Page SinguP*/
+.signTitle {
+  font-size: 25px;
+  color: #007bff;
+  text-align: center;
+  margin-top: 25px;
+}
+
+.container {
+  margin-top: 20px;
+  
+}
+
+.container .div_btn {
+  text-align: center !important;
+}
+
+.container .div_btn .btn-envoyer {
+  width: 150px;
+  
+}
+#footer
+{
+  margin-top: 200px !important ;
+}
+
+</style>
+<body>
+   
+
+    <h1 class="signTitle">S’ENREGISTRER</h1>
+    <div class="container">
+        <form id="_form" method="POST" action="/submit">
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <label for="inputEmail4">Votre Nom  </label>
+                <input type="text" name="name_nom" class="form-control" id="Nom" placeholder="Nom">
+                <span id="err_nom"></span>
+              </div>
+              <div class="form-group col-md-6">
+                <label for="inputPassword4">Votre Prénom   </label>
+                <input type="text" name="name_prenom" class="form-control" id="Prenom" placeholder="Prénom">
+                <span id="err_prenom"></span>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="inputAddress">Code d'identité National  </label>
+              <input type="text" name="name_cin" class="form-control" id="Cin" placeholder="HHxxxxxx">
+              <span id="err_cin"></span>
+            </div>
+            <div class="form-group">
+              <label for="inputAddress2">Email  </label>
+              <input type="email" name="name_email" class="form-control" id="qualite" placeholder="mail@gmail.com">
+              <span id="err_qualite"></span>
+            </div>
+             <div class="form-group">
+              <label for="inputAddress2">Mot de passe  </label>
+              <input type="password" name="name_pw" class="form-control" id="id_pw"  >
+              <span id="err_qualite"></span>
+            </div>
+             <div class="form-group">
+              <label for="inputAddress2">Confirmation mot de passe  </label>
+              <input type="password" name="name_cpw" class="form-control" id="qualite"  >
+              <span id="err_qualite"></span>
+            </div>
+                   <div class="form-group">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="gridCheck">
+                <label class="form-check-label" for="gridCheck">
+                    j’ai lu et j’accepte les conditions générales, notamment la mention relative à la protection des données personnelles *
+                </label>
+              </div>
+            </div>
+            {{!-- <button type="submit" name='submit' class="btn btn-primary">S’ENREGISTRER</button> --}}
+              <input type="submit" class="btn btn-primary" value="S’ENREGISTRER">  
+          
+             
+            </div>
+     
+          </form>
+
+    </div>
+    
+     
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="Script/main.js"></script>
+</body>
+
+</html>

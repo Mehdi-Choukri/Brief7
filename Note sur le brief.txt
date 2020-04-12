@@ -1,0 +1,14 @@
+*faire la correction sur la date de debut pour qu'elle soit superieur ou egale a la date
+systeme
+*faire le responsive design pour la page de detail
+
+*completer les champs dans la page confirmation .
+
+ ---------------
+faire la partie qui differenci un admin d'un utilisateur normal ,
+
+ajouter la partie capacle de faire l'ajout - modification - suppression  d'un vehicule *
+
+ajouter une page admin dedié a l'ajout modification et suppression .
+
+page admin doit etre faite selon une presentation des tableaux avec les reseravations faite 

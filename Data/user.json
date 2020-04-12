@@ -1,0 +1,90 @@
+[
+  {
+    "idCard": "",
+    "role": "",
+    "firstName": "",
+    "lastName": "",
+    "email": "",
+    "passWord": ""
+  },
+  {
+    "idCard": "HH112313",
+    "role": "Admin",
+    "firstName": "Hacker",
+    "lastName": "Haacker",
+    "email": "Admin@gmail.com",
+    "passWord": "Admin"
+  },
+  {
+    "idCard": "HH112311",
+    "role": "user",
+    "firstName": "Mohamed",
+    "lastName": "Choukri",
+    "email": "medelmehdi.choukri@gmail.com",
+    "passWord": "123456"
+  },
+  {
+    "idCard": "HH112311",
+    "role": "user",
+    "firstName": "Mohamed",
+    "lastName": "Choukri",
+    "email": "medelmehdi.choukri@gmail.com",
+    "passWord": "123456"
+  },
+  {
+    "idCard": "HH112311",
+    "role": "user",
+    "firstName": "Mohamed",
+    "lastName": "Choukri",
+    "email": "medelmehdi.choukri@gmail.com",
+    "passWord": "123456"
+  },
+  {
+    "idCard": "HH112311",
+    "role": "user",
+    "firstName": "Mohamed",
+    "lastName": "Choukri",
+    "email": "medelmehdi.choukri@gmail.com",
+    "passWord": "123456"
+  },
+  {
+    "idCard": "HH112311",
+    "role": "user",
+    "firstName": "Mohamed",
+    "lastName": "Choukri",
+    "email": "medelmehdi.choukri@gmail.com",
+    "passWord": "123456"
+  },
+  {
+    "idCard": "HH112300",
+    "role": "user",
+    "firstName": "Mohamed",
+    "lastName": "Choukri",
+    "email": "medelmehdi.choukri@gmail.com",
+    "passWord": "123456"
+  },
+  {
+    "idCard": "HH112355",
+    "role": "user",
+    "firstName": "Mohamed",
+    "lastName": "Choukri",
+    "email": "medelmehdi.choukri@gmail.com",
+    "passWord": "123456"
+  },
+  {
+    "idCard": "HH112666",
+    "role": "user",
+    "firstName": "Mohamed",
+    "lastName": "Choukri",
+    "email": "medelmehdi.choukri@gmail.com",
+    "passWord": "123456"
+  },
+  {
+    "idCard": "HH112311",
+    "role": "user",
+    "firstName": "Mohamed",
+    "lastName": "Choukri",
+    "email": "medelmehdi.choukri@gmail.com",
+    "passWord": "123456"
+  }
+]

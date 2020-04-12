@@ -1,0 +1,26 @@
+[
+  {
+    "idCard": "",
+    "idReservation": "",
+    "car": "",
+    "dateDebut": "",
+    "dateFin": "",
+    "prix": ""
+  },
+  {
+    "idCard": "HH112666",
+    "idReservation": "1",
+    "car": "Dodge",
+    "dateDebut": "2020-04-05",
+    "dateFin": "2020-04-29",
+    "prix": "888"
+  },
+  {
+    "idCard": "HH112311",
+    "idReservation": "11",
+    "car": "Dodge",
+    "dateDebut": "2020-04-16",
+    "dateFin": "2020-04-30",
+    "prix": "518"
+  }
+]
