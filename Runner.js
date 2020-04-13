@@ -37,12 +37,7 @@ var inforCars_notEmpty=[] ;
 // app.get("/Q&A.hbs", (req, res) => {
 //   res.render('Q&A');
 // });
-app.get("/QA.hbs", (req, res) => {
-
-  res.render('QA',{Departement_Data});
-  console.log(Departement_Data)
  
-});
  
 app.get("/Signup.hbs", (req, res) => {
     res.render('Signup');
@@ -165,8 +160,9 @@ app.post('/DeleteCar',urlencodedParser, function (req, res) {
     }
 
   }
+  console.log(newCarData)
   dataAccess.SaveJson(pathJson_Cars,newCarData);
- 
+   
    
 
 })
@@ -175,8 +171,24 @@ app.post('/addCar',urlencodedParser, function (req, res) {
   var pathJson_Cars = 'Data/voiture.json';
   var CarData = dataAccess.LoadJson(pathJson_Cars);
   console.log("I am adding cars now ")
-   console.log(req.body);
+
+    
   var id=Number(CarData[CarData.length - 1].IdCar) + 1;
+  var testImage = "Images/"+req.body.ImageAdd ;
+  var abort =false;
+for(var i=0;i<CarData.length;i++)
+{
+  if(testImage==CarData[i].Image)
+  {
+    abort=true;
+    console.log("Car exist !! ")
+    break;
+
+  }
+}
+if(abort==false)
+{
+  
    
   var dataToPush =
       {
@@ -199,7 +211,10 @@ app.post('/addCar',urlencodedParser, function (req, res) {
      CarData.push(dataToPush);
   
      dataAccess.SaveJson(pathJson_Cars,CarData);
-    //  res.render('Admin_Dash',{inforCars_notEmpty});
+}
+
+ 
+      // res.render('Admin_Dash',{inforCars_notEmpty});
 
 });
  
@@ -330,7 +345,7 @@ app.post('/reservation',urlencodedParser, function (req, res) {
   function Save_Data (obj)
  
   {
-    var id=obj[obj.length - 1].idReservation + 1;
+    var id=Number(obj[obj.length - 1].idReservation )+ 1;
     var R1 = new Reservation(req.body.idCard,id,req.body.car,req.body.startDate,req.body.endDate,req.body.price);
     console.log(R1);
     var dataToPush =

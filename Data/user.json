@@ -86,5 +86,45 @@
     "lastName": "Choukri",
     "email": "medelmehdi.choukri@gmail.com",
     "passWord": "123456"
+  },
+  {
+    "idCard": "HH112311",
+    "role": "user",
+    "firstName": "Mohamed",
+    "lastName": "Choukri",
+    "email": "mehdi@gmail.com",
+    "passWord": "123456"
+  },
+  {
+    "idCard": "HH112311",
+    "role": "user",
+    "firstName": "",
+    "lastName": "",
+    "email": "",
+    "passWord": "123456"
+  },
+  {
+    "idCard": "HH112311",
+    "role": "user",
+    "firstName": "",
+    "lastName": "",
+    "email": "",
+    "passWord": "123456"
+  },
+  {
+    "idCard": "HH112311",
+    "role": "user",
+    "firstName": " Elmehdi",
+    "lastName": "Choukri",
+    "email": "choukri@hotmail.com",
+    "passWord": "123456"
+  },
+  {
+    "idCard": "HH112311",
+    "role": "user",
+    "firstName": "mehdi",
+    "lastName": "Choukri",
+    "email": "choukri@hotmail.com",
+    "passWord": "123456"
   }
 ]

@@ -11,4 +11,4 @@ ajouter la partie capacle de faire l'ajout - modification - suppression  d'un ve
 
 ajouter une page admin dedié a l'ajout modification et suppression .
 
-page admin doit etre faite selon une presentation des tableaux avec les reseravations faite 
+page admin doit etre faite selon une presentation des tableaux de voitures.

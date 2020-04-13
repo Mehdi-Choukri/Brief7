@@ -172,7 +172,7 @@ function myFunction() {
         {
           remplir_champs_reservation (RegisteredUser._Cin,selectedCarForReservation,RegisteredUser._FirstName,RegisteredUser._LastName,RegisteredUser._Email)
           register_confirmation_cancel('.contactUs_Modal');
-          register_confirmation_popUp('.reservationModel');
+          // register_confirmation_popUp('.reservationModel');
    
           
         }

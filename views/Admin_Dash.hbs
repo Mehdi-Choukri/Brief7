@@ -268,7 +268,7 @@ var idCar = document.getElementById('id_carInput');
    {
         btnDelete[i].addEventListener('click',(e)=>{
             form.setAttribute('action','/DeleteCar');
-           
+           // create a new input in order to give it the actual id car 
             idCar.value=e.target.name;
 
           // {{!-- alert(e.target.name); --}}

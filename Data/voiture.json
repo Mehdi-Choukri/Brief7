@@ -1,15 +1,15 @@
 [
   {
     "IdCar": "1",
-    "Year": "2015",
+    "Year": "2004",
     "Make": "Audi",
     "Model": "A4",
     "Mileage": "125.367",
     "Drivetrain": "All Wheel Drive",
     "ExteriorColor": "Black",
     "InteriorColor": "Black",
-    "Doors": "4",
-    "Price": "7500",
+    "Doors": "2",
+    "Price": "17500",
     "Image": "Images/audi.jpg"
   },
   {
@@ -27,41 +27,41 @@
   },
   {
     "IdCar": "3",
-    "Year": "2020",
+    "Year": "2017",
     "Make": "AMG",
     "Model": "4X4",
-    "Mileage": "125",
+    "Mileage": "125.222",
     "Drivetrain": "Front Wheels",
     "ExteriorColor": "Black &Yellow",
     "InteriorColor": "BLACK",
     "Doors": "4",
-    "Price": "18000",
+    "Price": "16900",
     "Image": "Images/GMC.jpg"
   },
   {
     "IdCar": 4,
-    "Year": "2019",
-    "Make": "Porsche",
-    "Model": "911",
-    "Mileage": "100.100",
-    "Drivetrain": "All Wheel Drive",
-    "ExteriorColor": "Red",
+    "Year": "2014",
+    "Make": "Chevrolet",
+    "Model": "Yarris",
+    "Mileage": "99.200",
+    "Drivetrain": "Front Wheels",
+    "ExteriorColor": "White",
     "InteriorColor": "Black",
-    "Doors": "2",
-    "Price": "19000",
-    "Image": "Images/bg6.jpg"
+    "Doors": "4",
+    "Price": "12000",
+    "Image": "Images/Chevrolet.jpg"
   },
   {
     "IdCar": 5,
-    "Year": "2013",
-    "Make": "Mercedes",
-    "Model": "CLK",
-    "Mileage": "80.000",
-    "Drivetrain": "All Wheel Drives",
+    "Year": "2009",
+    "Make": "Porsche",
+    "Model": "911",
+    "Mileage": "100.100",
+    "Drivetrain": "Front Wheels",
     "ExteriorColor": "Red",
-    "InteriorColor": "Gray",
-    "Doors": "4",
-    "Price": "16000",
-    "Image": "Images/bg3.jpg"
+    "InteriorColor": "Black",
+    "Doors": "2",
+    "Price": "22000",
+    "Image": "Images/bg6.jpg"
   }
 ]
